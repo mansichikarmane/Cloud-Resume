@@ -5,6 +5,10 @@
 
 .name {
   text-align: center;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 5px;
 }
 
 .title {
