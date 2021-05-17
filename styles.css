@@ -1,0 +1,16 @@
+* {
+  background: white;
+  font-family: Roboto;
+}
+
+.name {
+  text-align: center;
+}
+
+.title {
+  text-decoration: underline;
+  
+}
+.category {
+  outline: black solid 1px;
+}
