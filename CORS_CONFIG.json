@@ -1,0 +1,15 @@
+[
+  {
+    "AllowedHeaders":[
+      "Authorization"
+    ],
+    "AllowedMethods":[
+      "GET"
+    ],
+    "AllowedOrigins":[
+      "<url of first bucket with http://...without a slash at the end>"
+    ],
+    "ExposedHeaders":[],
+    "MaxAgeSeconds":3000
+  }
+]
