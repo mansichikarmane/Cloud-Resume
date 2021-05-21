@@ -1,90 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mansi Chikarmane</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <div class="category">
-    <h1 class="name">Mansi Chikarmane</h1>
-    <h4 class="name">+1(408)636-6887 | Cupertino, CA</h4>
-  </div>
-
-  <div class="category">
-    <h3 class="title">OBJECT</h3>
-    <p>Mansi is a recent graduate from SJSU with experience in frontend web development, responsive web design and business process improvement across academic, start-up and non-profit sectors. She’s skilled in leadership, communication, and collaboration across all levels. Mansi is excited about opportunities to work at the intersection of user interface and technology, and is passionate about taking a creative, data-driven approach to helping people do their best work.
-    </p>
-  </div>
-
-  <div class="category">
-    <h3 class="title">Skills</h3>
-    <p>
-      <ul>
-        <li>HTML/CSS, Python, Linux, JavaScript, React, Swift, Ruby on Rails, SQL, Git/Github, Jira, AWS</li>
-        <li>Data Visualization (Tableau), Data Modeling / Analysis ( Excel VBA and Macro)</li>
-        <li>Microsoft Office (Excel, Word, PowerPoint) and Google G Suite (Sheets, Docs, Slides)</li>
-        <li>AWS Certified Solutions Architect certification in progress</li>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="#home" id="navbar__logo">welcome!</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="#home" class="navbar__links" id="home-page">About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#about" class="navbar__links" id="about-page">Objective</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#services" class="navbar__links" id="services-page">Skills</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#projects" class="navbar__links" id="projects-page">Projects</a>
+        </li>
+        <li class="navbar__btn">
+          <a href="#sign-up" class="button" id="signup">Experience</a>
+        </li>
       </ul>
-    </p>
-  </div>
-
-  <div class="category">
-    <h3 class="title">Experience</h3>
-    <div class="experience">
-      <h4>Foobar Inc. | Remote | February 2021 - Present</h4>
-      <h5>Software Engineer Intern</h5>
     </div>
-    <div class="experience">
-      <h4>PBL Works | Remote | October 2021 - March 2021</h4>
-      <h5>Technical Support Assistant</h5>
-      <p>
-        <ul>
-          <li>Assisted online classrooms with up to 30+ students on technical issues ranging from connection issues, creating breakout rooms, and communicated with clients one-on-one to ensure technology, log-in information and software was supporting their needs</li>
-        </ul>
-      </p>
-    </div>
-    <div class="experience">
-      <h4>Breathe California of the Bay Area | San Jose, CA | April 2019 - August 2019</h4>
-      <h5>Intern, Clean Cities Initiative</h5>
-      <p>
-        <ul>
-          <li>Planned San Jose’s first annual electric car ride and drive event drawing 100+ attendees</li>
-          <li>Partnered directly with 50+ local businesses and 10+ car dealerships, including Tesla and Jaguar, in order
-            to gather funds, vehicles, and supplies for electric ride and drive event</li>
-          <li>Collaborated with 500+ alternative fuel stakeholders to assess Santa Clara county’s alternative fuel vehicle
-            use and compiled into an annual report</li>
-        </ul>
-      </p>
+  </nav>
+  
+  <!-- Hero Section -->
+  <div class="hero" id="home">
+    <div class="hero__container">
+      <h1 class="hero__heading">Hello, I'm<br> <span>Mansi Chikarmane</span></h1>
+      <p class="hero__description">Welcome to my page</p>
+      <button class="main__btn"><a href="#">Contact</a></button>
     </div>
   </div>
 
-  <div class="category">
-    <h3 class="title">Education</h3>
-    <p>San Jose State University | San Jose, CA | August 2017 - May 2020</p>
-    <h5>Bachelor of Science in Public Health, GPA: 3.4</h5>
-    <h5>Relevant Courses: iOS Development, HR Management and Organizational Behavior, Statistics</h5>
-    <h5>Honors/Leadership: Dean's Scholar 2018, Treasurer SJSU Public Health Peer Advisor</h5>
+  <!-- Objective Section -->
+  <div class="main" id="about">
+    <div class="main__container">
+      <div class="main__img--container">
+        <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+      </div>
+      <div class="main__content">
+        <h2>My Objective</h2>
+        <!-- <h2>We help businesses scale</h2> -->
+        <p>Mansi is a recent graduate from SJSU with experience in frontend web development, responsive web design and business process improvement across academic, start-up and non-profit sectors. She’s skilled in leadership, communication, and collaboration across all levels. Mansi is excited about opportunities to work at the intersection of user interface and technology, and is passionate about taking a creative, data-driven approach to helping people do their best work</p>
+        <!-- <button class="main__btn"><a href="#">Schedule Call</a></button> -->
+      </div>
+    </div>
   </div>
 
-  <div class="category">
-    <h3 class="title">Projects</h3>
-    <h4>Cloud Resume Challenge</h4>
-    <p>Deployed website using Amazon S3 (AWS) and infrastructure as code to develop frontend and backend website.</p>
-    <h4>Income Calculator | Swift</h4>
-    <p>Created UI and functional app that calculates daily income, and total income based on user input</p>
-    <h4>Responsive iOS Screens for The Foobar App | HTML, CSS, JavaScript</h4>
-    <p>Developed responsive pages for login, sign-up, successful order and order status for application</p>
+  <!-- Services Section -->
+  <div class="services" id="services">
+    <h1>Our Services</h1>
+    <div class="services__wrapper">
+      <div class="services__card">
+        <h2>Custom Colorways</h2>
+        <p>AI Powered technology</p>
+        <div class="services__btn"><button>Get Started</button></div>
+      </div>
+    </div>
+    <div class="services__wrapper">
+      <div class="services__card">
+        <h2>Are you Ready?</h2>
+        <p>Take the leap</p>
+        <div class="services__btn"><button>Get Started</button></div>
+      </div>
+    </div>
+    <div class="services__wrapper">
+      <div class="services__card">
+        <h2>Full Gradients</h2>
+        <p>100 Combinations</p>
+        <div class="services__btn"><button>Get Started</button></div>
+      </div>
+    </div>
+    <div class="services__wrapper">
+      <div class="services__card">
+        <h2>Infinite Choices</h2>
+        <p>1000's of colors</p>
+        <div class="services__btn"><button>Get Started</button></div>
+      </div>
+    </div>
   </div>
 
+  <!-- Features Section -->
+  <div class="main" id="sign-up">
+    <div class="main__content">
+      <h1>What do we do?</h1>
+      <h2>We help businesses scale</h2>
+      <p>Schedule a call to learn more about our services</p>
+      <button class="main__btn"><a href="#">Schedule Call</a></button>
+    </div>
+
+    <div class="main__container">
+      <div class="main__img--container">
+        <div class="main__img--card"><i class="fas fa-users"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
