@@ -6,8 +6,12 @@
   scroll-behavior: smooth;
 }
 
+.logo {
+  height: 65px;
+}
+
 .navbar {
-  background: #ffffff;
+  background: black;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -31,7 +35,7 @@
 
 #navbar__logo {
   background-color: #000000;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-image: linear-gradient(to top, #82b4ff 0%, #46b4f9 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -55,7 +59,7 @@
 }
 
 .navbar__links {
-  color: rgb(0, 0, 0);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,15 +88,15 @@
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #b43a5f);
+  background: #46b4f9;
+  /* background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #b43a5f); */
   color: #fff;
   transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-  color: #9518fc;
+  color: #46b4f9;
   transition: all 0.3s ease;
 }
 
@@ -193,7 +197,7 @@
 /* Hero Section */
 .hero {
   background: #000000;
-  background: linear-gradient(to right, #e5c5f5, #ffffff);
+  background: linear-gradient(to right, #dee2fc, #ffffff);
   padding: 250px 0;
 }
 
@@ -206,19 +210,21 @@
   margin: 0 auto;
   height: 90%;
   text-align: center;
-  padding: 30px;
+  padding: 15px;
 }
 
 .hero__heading {
   font-size: 100px;
-  margin-bottom: 24px;
-  color: #fff;
+  margin-bottom: 50px;
+  color: #000;
 }
 
 .hero__heading span {
+  font-size: 75px;
+  font-family: 'Potta One', cursive;
   background: #833ab4;
-  background: -webkit-linear-gradient(to right, #7c5583, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #b43a5f);
+  background: -webkit-linear-gradient(to right, #9ac6fc, #1d6ffd, #403ab4);
+  background: linear-gradient(to right, #9ac6fc, #1d6ffd, #403ab4);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -229,8 +235,8 @@
 .hero__description {
   font-size: 60px;
   background: #da22ff;
-  background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
-  background: linear-gradient(to right, #8f0eff, #da22ff);
+  background: -webkit-linear-gradient(to right, #3e3942, #000000);
+  background: linear-gradient(to right, #554f5b, #000000);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -276,8 +282,8 @@
 }
 
 .main__content h1{
-  background-color: #fe3b6f;
-  background-image: linear-gradient(to top, #ff0844 0%, #ed1a52 100%);
+  background-color: #653bfe;
+  background-image: linear-gradient(to top, #6449e9 0%, #1a56ed 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -290,8 +296,8 @@
 .main__content h2 {
   font-size: 4rem;
   background: #da22ff;
-  background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
-  background: linear-gradient(to right, #8f0eff, #da22ff);
+  background: -webkit-linear-gradient(to right, #2680c6, #2256ff);
+  background: linear-gradient(to right, #739cbb, #2256ff);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -307,8 +313,8 @@
 .main__btn {
   font-size: 1.8rem;
   background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: -webkit-linear-gradient(to right, #9ac6fc, #1d6ffd, #403ab4);
+  background: linear-gradient(to right, #9ac6fc, #1d6ffd, #403ab4);
   padding: 20px 60px;
   border: none;
   border-radius: 4px;
@@ -333,7 +339,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: #ff1ead;
+  background: #1e5eff;
   transition: all 0.35s;
   border-radius: 4px;
 }
@@ -443,33 +449,40 @@
   }
 }
 
-/* Services Section */
+/* Projects Section */
 .services {
   background: #131313;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 10rem 0;
+  padding: 10rem 2rem;
+}
+
+.services span {
+  color: rgb(249, 216, 216);
+  padding-left: 5px;
+  font-size: 12rem;
 }
 
 .services h1 {
-  background-color: #ff8177;
-  background-image: linear-gradient(to right, #ff0844 0%, #f46235 100%);
+  background-color: #46b4f9;
+  /* background-image: linear-gradient(to right, #08a0ff 0%, #3f35f4 100%); */
   background-size: 100%;
+  padding-top: 2rem;
+  padding-right: 1rem;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  margin-bottom: 5rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .services__wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5rem;
 }
 
 .services__card {
@@ -480,8 +493,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  color: rgb(62, 60, 60);
+  background-image: linear-gradient(to right, #a4dcfe 0%, #fed9ff 100%);
   transition: 0.3s ease-in;
 }
 
@@ -513,18 +526,25 @@
   margin-top: 16px;
 }
 
+.services a {
+  text-decoration: none;
+  color: white;
+}
+
 .services__card button {
   color: #fff;
   padding: 14px 24px;
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #131313;
+  background: #000;
   font-size: 1rem;
 }
 
 .services__card button:hover {
   cursor: pointer;
+  transition: 0.3s ease-in;
+  background-color:rgb(66, 65, 65);
 }
 
 .services__card:hover {
@@ -545,4 +565,62 @@
   }
 }
 
+/* Connect with Me Settings */
+
+.connect__section {
+  background: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20rem 2rem;
+}
+
+.connect__section h1 {
+  padding: ;
+  color: #fff;
+}
+
+.contact__card {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(62, 60, 60);
+  background-color: #fff;
+  background-image: linear-gradient(to right, #a4dcfe 0%, #fed9ff 100%);
+  transition: 0.3s ease-in;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__card h2 {
+  color: #000;
+  background-image: linear-gradient(to right, #a4dcfe 0%, #fed9ff 100%);
+}
+
+.contact__card img {
+  height: 70px;
+}
+
+.mid__text {
+  color: #fff;
+  
+}
+
+
+
 /* Footer */
+.footer__div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3e3942;
+}
+.footer {
+  align-items: center;
+  color: #fff;
+}
